@@ -6,9 +6,9 @@ function calculateAverage(x) {
   if (x !== undefined) {
     for (let i = 0; i < x.length; i++) {
       const element = x[i];
-      const result = (add += element);
+      add += element;
 
-      const finalResult = result / x.length;
+      const finalResult = add / x.length;
       if (i === x.length - 1) {
         return finalResult;
       }
